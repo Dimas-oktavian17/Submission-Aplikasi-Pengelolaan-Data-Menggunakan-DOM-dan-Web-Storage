@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+/* Container component */
+@layer components {
+    .container {
+        @apply max-w-5xl py-8 mx-auto;
+    }
+
+    .form-input {
+        @apply bg-main-text/60 border border-main-text text-main-bg/60 text-sm rounded-lg focus:ring-secondary-bg dark:focus:border-secondary-bg block w-full p-2.5 dark:bg-secondary-bg dark:border-secondary-bg dark:placeholder-main-text/60 dark:text-main-text/60
+    }
+}
