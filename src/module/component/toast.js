@@ -1,4 +1,4 @@
-import { toastId } from '../variabel'
+import { modal, toastId, toastTime } from '../variabel'
 
 export function toast() {
     return `
@@ -17,4 +17,23 @@ export function toast() {
            </div>
             </div>
     `
+}
+export function removeAllert() {
+    setTimeout(() => {
+        const alert = document.querySelector(`#${toastId}`)
+        if (alert) {
+            alert.parentNode.removeChild(alert)
+        }
+    }, toastTime)
+}
+
+export function showDialog() {
+    document.body.classList.add('overflow-hidden')
+    modal.classList.remove('hidden')
+    modal.classList.add('block')
+}
+export function hideDialog() {
+    document.body.classList.remove('overflow-hidden')
+    modal.classList.remove('block')
+    modal.classList.add('hidden')
 }

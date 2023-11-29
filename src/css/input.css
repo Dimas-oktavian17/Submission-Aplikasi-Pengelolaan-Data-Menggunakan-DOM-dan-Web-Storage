@@ -10,6 +10,38 @@
     }
 
     .form-input {
-        @apply bg-main-text/60 border border-main-text text-main-bg/60 text-sm rounded-lg focus:ring-secondary-bg dark:focus:border-secondary-bg block w-full p-2.5 dark:bg-secondary-bg dark:border-secondary-bg dark:placeholder-main-text/60 dark:text-main-text/60
+        @apply bg-main-text/60 border border-main-bg text-main-bg/60 text-sm rounded-lg focus:ring-secondary-bg dark:focus:border-secondary-bg block w-full p-2.5 dark:bg-secondary-bg dark:border-secondary-bg dark:placeholder-main-text/60 dark:text-main-text/60
+    }
+
+    .cards-container {
+        @apply flex flex-col items-center justify-start p-4 bg-white border rounded-lg shadow-sm sm:p-6 lg:p-8 lg:flex-row lg:justify-center border-white/60 dark:bg-secondary-child dark:border-secondary-bg
+    }
+
+    .cards-font {
+        @apply text-sm font-medium text-gray-900 dark:text-main-text/60
+    }
+
+    .container-wrapper {
+        @apply w-full lg:w-[40%] flex flex-col justify-start items-center
+    }
+
+    .container-btn {
+        @apply flex flex-row items-center justify-center
+    }
+
+    .container-font {
+        @apply inline-block pr-10 ml-1 text-sm font-medium text-main-bg dark:text-main-text/60
+    }
+
+    .trash {
+        @apply fill-main-bg dark:fill-main-text/60 w-[14px] h-[14px]
+    }
+
+    .loop {
+        @apply fill-main-bg dark:fill-main-text/60 w-[14px] h-[14px]
+    }
+
+    .action {
+        @apply inline-block pr-10 ml-1 text-sm font-medium text-main-bg dark:text-main-text/60
     }
 }
