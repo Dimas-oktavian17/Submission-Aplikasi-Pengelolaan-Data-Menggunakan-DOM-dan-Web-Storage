@@ -14,7 +14,7 @@
     }
 
     .cards-container {
-        @apply flex flex-col items-center justify-start p-4 bg-white border rounded-lg shadow-sm sm:p-6 lg:p-8 lg:flex-row lg:justify-center border-white/60 dark:bg-secondary-child dark:border-secondary-bg
+        @apply flex flex-col items-center justify-start p-4 mb-2 bg-white border rounded-lg shadow-sm sm:p-6 lg:p-8 lg:flex-row lg:justify-center border-white/60 dark:bg-secondary-child dark:border-secondary-bg
     }
 
     .cards-font {
